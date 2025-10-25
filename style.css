@@ -1,0 +1,151 @@
+:root {
+  --primary: #6c63ff;
+  --accent: #00bcd4;
+  --danger: #ff6b6b;
+  --glass: rgba(255, 255, 255, 0.15);
+  --highlight: #ffeb3b;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #6c63ff, #00bcd4);
+  color: #fff;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 450px;
+  background: var(--glass);
+  backdrop-filter: blur(20px);
+  padding: 2.2rem;
+  border-radius: 22px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+  transition: all 0.3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  color: #fff;
+}
+
+input[type="date"] {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+}
+
+.btn {
+  width: 48%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: var(--primary);
+}
+.btn-primary:hover {
+  background: #5a55ff;
+  transform: scale(1.04);
+}
+
+.btn-danger {
+  background: var(--danger);
+}
+.btn-danger:hover {
+  background: #e84141;
+  transform: scale(1.04);
+}
+
+.result-box {
+  margin-top: 1.5rem;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 14px;
+  padding: 1rem;
+  display: none;
+  animation: fadeIn 0.8s ease;
+}
+
+.result-box.visible {
+  display: block;
+}
+
+.highlight {
+  color: var(--highlight);
+  font-weight: 600;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 4%;
+}
+
+.error {
+  color: #ffe57f;
+  margin-top: 0.5rem;
+}
+
+.share-section {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.share-section button {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #fff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.share-section button:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: scale(1.12);
+}
+
+footer {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  opacity: 0.9;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 0.8rem;
+  line-height: 1.4;
+}

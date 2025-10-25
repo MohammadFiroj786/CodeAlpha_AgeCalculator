@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>🎂 Smart Age Calculator | CodeAlpha</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+  <h1>🎂 Smart Age Calculator</h1>
+
+  <input type="date" id="dob" placeholder="Select your date of birth" />
+  <div id="error" class="error"></div>
+
+  <div class="btn-group">
+    <button class="btn btn-primary" id="calcBtn"><i class="fa-solid fa-calculator"></i> Calculate</button>
+    <button class="btn btn-danger" id="resetBtn"><i class="fa-solid fa-rotate-right"></i> Reset</button>
+  </div>
+
+  <div class="result-box" id="resultBox">
+    <p id="mainResult"></p>
+    <p id="lifeStats"></p>
+    <p id="birthdayInfo"></p>
+    <p id="countdown"></p>
+
+    <div class="share-section">
+      <button id="downloadBtn" title="Download Result"><i class="fa-solid fa-download"></i></button>
+      <button id="shareBtn" title="Share Result"><i class="fa-solid fa-share-nodes"></i></button>
+    </div>
+  </div>
+
+  <footer>
+    💡 Ensure your system date & time are correct for accurate results.<br>
+    👨‍💻 Created by <strong>CodeAlpha Intern Mohammad Firoj</strong>
+  </footer>
+</div>
+
+<!-- Libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<!-- Main JS -->
+<script src="script.js"></script>
+</body>
+</html>
